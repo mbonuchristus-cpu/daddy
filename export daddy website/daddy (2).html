@@ -287,6 +287,22 @@
   </div>
 </footer>
 
+<div class="mobile-nav">
+    <img src="anchoricon-removebg-preview.png" alt="" width="40px">
+    <button onclick="toggleMobileNav()">☰</button>
+</div>
+<div class="mobile-head" id="mobileHead">
+    <a href="#">Home</a>
+    <a href="#POI">Buy now</a>
+    <a href="#footer">Contact Us</a>
+    <a href="#reviews">Reviews</a>
+</div>
+
+<script>
+function toggleMobileNav() {
+    document.getElementById('mobileHead').classList.toggle('show');
+}
+</script>
 
 
 
