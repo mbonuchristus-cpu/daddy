@@ -540,4 +540,137 @@ footer i {
 .a:hover{
     transform: scale(1.05);
     
+
 }
+/* ========================== SMALL PHONES (Samsung Galaxy S8) ========================== */
+@media (max-width: 380px) {
+
+    /* Header stays horizontal */
+    .head {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .a {
+        font-size: 16px;
+    }
+
+    /* Main layout stacks */
+    .init {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ok, .video {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .anchor {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .opo {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Product boxes stacked */
+    .row1, .row2, .row3, .row40 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Uniform box and image sizes */
+    .box1, .box2, .box3, .box12, .box22, .box32, .box13, .box23, .box33 {
+        width: 90%;
+        max-width: 300px;  /* prevents one box from being bigger */
+        height: auto;
+        margin-bottom: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px; /* space for button */
+    }
+
+    .img {
+        width: 100%;
+        height: 200px;   /* fixed height for uniformity */
+        object-fit: cover; /* prevents stretching */
+        border-radius: 20px;
+    }
+
+    /* Buy now button inside box */
+    .bnt {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        font-size: 14px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Bouncing image scaling */
+    .bounce {
+        width: 150px;
+        height: auto;
+        animation: bounce 2s infinite;
+        margin: 0 auto;
+    }
+
+    .shadow {
+        width: 120px;
+        margin-left: -15px;
+    }
+
+    /* Footer stacking */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer1, .footer2, .logotic {
+        margin: 10px 0;
+    }
+
+    del, .rowp, .word1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* View More section fix */
+    .hidden {
+        max-height: none; /* allow full expansion vertically */
+    }
+
+    #checkbos:checked ~ .hidden {
+        max-height: 1000px; /* sufficient for vertical stacking */
+    }
+}
+
+/* Tablets (iPads, Galaxy Tab) */
+@media (max-width: 768px) {
+    .box1, .box2, .box3, .box12, .box22, .box32, .box13, .box23, .box33 {
+        width: 80%;
+        max-width: 350px;
+        padding-bottom: 60px;
+    }
+
+    .bnt {
+        width: 70%;
+    }
+
+    .bounce {
+        width: 180px;
+    }
+}
+
