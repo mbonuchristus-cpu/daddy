@@ -540,7 +540,6 @@ footer i {
 .a:hover{
     transform: scale(1.05);
     
-
 }
 /* ========================== SMALL PHONES (Samsung Galaxy S8) ========================== */
 @media (max-width: 380px) {
@@ -673,4 +672,3 @@ footer i {
         width: 180px;
     }
 }
-
